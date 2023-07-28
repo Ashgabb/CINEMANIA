@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.top-section, .bottom-section{
+    width: 100vw;
+    height: 20vh;
+    background-color: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.top-section img, .bottom-section img{
+    width: 20vw;
+    height: 21vh;
+    transition: transform .2s;
+}
+
+.top-section img:hover, .bottom-section img:hover{
+    transform: scale(1.5);
+}
+
+.top-line, .bottom-line{
+    width: 100vw;
+    height: 5vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main{
+    width: 100vw;
+    height: 50vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+}
+  
+.slider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.slider li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+img {
+    height: 50vh;
+    width: 40vw;
+}
+  
+.slider li.active {
+    opacity: 1;
+}
+  
+.slider .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+.desc{
+    height: 50vh;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 15px 50px;
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    background-image: url('/resources/media/bobshell.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.desc h3{
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+span{
+    font-family: cursive;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #ff0000;
+    margin: 10px;
+}
+
+.desc p{
+    width: 80%;
+    margin: 5px auto;
+    font-size: 1.5rem;
+}
+
+
+.line-block{
+    background-color: #fff;
+    width: 5%;
+    height: 40%;
+    color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+    .desc{
+        position: absolute;
+        top: -2px;
+        left: 40%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .desc h3{
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    
+    span{
+        font-family: cursive;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: #ff0000;
+        margin: 15px;
+    }
+    
+    .desc p{
+        width: 80%;
+        margin: 15px auto;
+        font-size: 16px;
+    }
+}
